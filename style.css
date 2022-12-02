@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto";
 }
 
 .container {
@@ -33,17 +34,21 @@
 }
 
 .navbar {
-  width: 70%;
-  margin: auto;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(0,0,0,.1);
-  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
+
+.navbar:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease-out;
+}
+
 .logo {
   font-family: "Nabla";
-  font-size: 70px;
+  font-size: 60px;
   cursor: pointer;
 }
 .navbar ul li {
@@ -76,4 +81,33 @@
 
 .navbar ul li:hover::before {
   width: 100%;
+}
+
+section {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: 240px;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease-out;
+}
+
+.card img {
+  width: 80%;
+  margin-top: 5%;
+}
+
+.card p {
+  color: #ffdc37;
+  margin-top: 5%;
 }
